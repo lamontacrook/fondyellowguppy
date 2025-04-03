@@ -2,7 +2,7 @@ import { createTag, decorateIcons, makeVideo } from '../../scripts/scripts.js';
 
 export default async function decorate(block) {
   const media = [
-    'media="(min-width: 520px)"',
+    'media="(min-width: 600px)"',
     ''
   ];
 
