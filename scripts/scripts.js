@@ -157,6 +157,7 @@ export function createTag(tag, attributes, html = undefined) {
 export function makeVideo(element, videoSrcs, media) {
 
   const srcStr = [...videoSrcs].map(({ href }, n) => {
+    href = href.replace('https://main--fondyellowguppy--lamontacrook.aem.page/%20','');
     return `<source data-src="${href}" type="video/mp4" ${media[n]} />`
   });
 
